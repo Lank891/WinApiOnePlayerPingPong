@@ -72,7 +72,7 @@ ATOM windowClassRegister(HINSTANCE hInstance) {
     wcex.hInstance      = hInstance;
     wcex.hIcon          = NULL; //defautlt
     wcex.hCursor        = LoadCursor(NULL, IDC_ARROW);
-	wcex.hbrBackground  = NULL;
+    wcex.hbrBackground  = NULL;
     wcex.lpszMenuName   = NULL; //No menu
     wcex.lpszClassName  = L"pongClass";
     wcex.hIconSm        = NULL; //default
@@ -260,7 +260,7 @@ LRESULT CALLBACK wndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam) 
         }
         case WM_CREATE: {
             RECT c;
-			GetClientRect(hWnd, &c);
+	    GetClientRect(hWnd, &c);
 
             HDC hdc = GetDC(hWnd);
             offDC = CreateCompatibleDC(hdc);
