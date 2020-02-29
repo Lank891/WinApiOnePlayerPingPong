@@ -1,2 +1,2 @@
 # WinApi One Player Ping-Pong
-One player pretty simple ping pong done with WinAPI
+One player pretty simple ping pong made with WinAPI
